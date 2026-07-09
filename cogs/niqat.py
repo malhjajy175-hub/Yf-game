@@ -67,7 +67,7 @@ class NiqatCog(commands.Cog):
 
         font_size = int(badge_diam * 2.10)
         try:
-            font_num = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", font_size)
+            font_num = ImageFont.truetype("Amiri-Bold.ttf", font_size)
         except:
             font_num = ImageFont.load_default()
 
