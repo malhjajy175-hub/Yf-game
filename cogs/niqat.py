@@ -65,7 +65,7 @@ class NiqatCog(commands.Cog):
         y2 = int(H * 0.7186)
         y3 = int(H * 0.8807)
 
-        font_size = int(badge_diam * 2.10)
+        font_size = int(badge_diam * 1.10)
         try:
             font_num = ImageFont.truetype("Amiri-Bold.ttf", font_size)
         except:
