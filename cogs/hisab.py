@@ -21,8 +21,8 @@ def make_image(title: str, question: str) -> discord.File:
     img = get_bg()
     draw = ImageDraw.Draw(img)
     W, H = img.size
-    font_title = load_font(37)
-    font_question = load_font(60)
+    font_title = load_font(90)
+    font_question = load_font(190)
 
     GOLD = (255, 215, 0, 255)
     SHADOW = (0, 0, 0, 200)
@@ -33,7 +33,7 @@ def make_image(title: str, question: str) -> discord.File:
     bbox = draw.textbbox((0, 0), title, font=font_title)
     tw = bbox[2] - bbox[0]
     tx = (W - tw) / 2
-    ty = H * 0.2
+    ty = H * 0.15
     draw.text((tx+3, ty+3), title, font=font_title, fill=SHADOW)
     draw.text((tx, ty), title, font=font_title, fill=GOLD)
 
