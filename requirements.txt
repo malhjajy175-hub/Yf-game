@@ -5,3 +5,5 @@ pymongo
 dnspython
 aiohttp
 motor
+arabic-reshaper
+python-bidi
